@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TouroController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('touros', TouroController::class);
